@@ -2,9 +2,9 @@ package sample2
 
 import (
 	"fmt"
-	"github.com/fabriciovz/go_patterns/singleton/sample2/pkg1"
-	"github.com/fabriciovz/go_patterns/singleton/sample2/pkg2"
-	"github.com/fabriciovz/go_patterns/singleton/sample2/singleton"
+	"github.com/fabriciovz/go_patterns/creational/singleton/sample2/pkg1"
+	"github.com/fabriciovz/go_patterns/creational/singleton/sample2/pkg2"
+	"github.com/fabriciovz/go_patterns/creational/singleton/sample2/singleton"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
