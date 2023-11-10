@@ -23,13 +23,6 @@ func (a *theWasp) SayHi() {
 	fmt.Println("Hi, I am The Wasp and you??")
 }
 
-// Concrete Strategy 3
-type ironMan struct{}
-
-func (a *ironMan) SayHi() {
-	fmt.Println("Hi, I am Iron-man and you??")
-}
-
 // Context
 type hero struct {
 	hero SuperHero
@@ -43,15 +36,4 @@ func NewHero(sh SuperHero) *hero {
 	return &hero{
 		hero: sh,
 	}
-}
-
-func main() {
-	hero1 := NewHero(&theWasp{})
-	hero1.Talk()
-
-	hero2 := NewHero(&antMan{})
-	hero2.Talk()
-
-	hero3 := NewHero(&ironMan{})
-	hero3.Talk()
 }
