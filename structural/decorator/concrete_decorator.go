@@ -1,7 +1,7 @@
 package decorator
 
 type TomatoTopping struct {
-	pizza IPizza
+	*ToppingDecorator
 }
 
 func (c *TomatoTopping) getDescription() string {
@@ -14,5 +14,6 @@ func (c *TomatoTopping) getPrice() int {
 }
 
 func NewTomatoTopping(pizza IPizza) *TomatoTopping {
-	return &TomatoTopping{pizza: pizza}
+	newToppingDecorator := NewToppingDecorator(pizza)
+	return &TomatoTopping{ToppingDecorator: newToppingDecorator}
 }
