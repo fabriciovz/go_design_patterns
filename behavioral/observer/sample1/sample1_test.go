@@ -1,4 +1,4 @@
-package observer
+package sample1
 
 import (
 	"testing"
