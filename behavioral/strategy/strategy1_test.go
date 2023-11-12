@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestSingleton1(t *testing.T) {
+func TestStrategy(t *testing.T) {
 	t.Parallel()
 	t.Run("", func(t *testing.T) {
 		hero1 := NewHero(&theWasp{})
